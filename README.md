@@ -25,7 +25,7 @@ A Material Design Custom Button Library for Android
 
 ## Contribute
 
-Please fork this repository and contribute back using [pull requests](https://github.com/ahmmedrejowan/CuteSnack/pulls).
+Please fork this repository and contribute back using [pull requests](https://github.com/ahmmedrejowan/CuteButton/pulls).
 
 Any contributions, large or small, major features, bug fixes, are welcomed and appreciated
 but will be thoroughly reviewed .
