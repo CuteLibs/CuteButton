@@ -1,4 +1,6 @@
 # CuteButton
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
+
 A Material Design Custom Button Library for Android
 
 <br/>
