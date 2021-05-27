@@ -1,5 +1,5 @@
 # CuteButton
-[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com) [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21) [![JitPack](https://img.shields.io/jitpack/v/github/ahmmedrejowan/CuteButton)](https://jitpack.io/#ahmmedrejowan/CuteButton) 
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com) [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21) [![JitPack](https://img.shields.io/jitpack/v/github/ahmmedrejowan/CuteButton)](https://jitpack.io/#ahmmedrejowan/CuteButton) [![GitHub license](https://img.shields.io/github/license/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/blob/master/LICENSE)  
 <br/>
 A Material Design Custom Button Library for Android
 
