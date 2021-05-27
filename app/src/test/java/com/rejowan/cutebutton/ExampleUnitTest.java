@@ -1,4 +1,4 @@
-package com.rejowan.cutebuttonexample;
+package com.rejowan.cutebutton;
 
 import org.junit.Test;
 
