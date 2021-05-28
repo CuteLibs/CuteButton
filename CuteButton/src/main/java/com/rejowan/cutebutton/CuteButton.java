@@ -25,9 +25,7 @@ import androidx.annotation.RequiresApi;
 
 public class CuteButton extends LinearLayout {
 
-    /**
-     * icon position
-     */
+
     public static final int POSITION_LEFT = 1;
     public static final int POSITION_RIGHT = 2;
     public static final int POSITION_TOP = 3;
@@ -102,7 +100,7 @@ public class CuteButton extends LinearLayout {
         initializeView();
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    @SuppressWarnings("unused")
     public CuteButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         this.context = context;
@@ -169,21 +167,9 @@ public class CuteButton extends LinearLayout {
         updateIconPadding();
     }
 
-    private void setupSize() {
-        int width = iconSize;
-        int height = iconSize;
-        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width, height);
-        imageView.setLayoutParams(parms);
-
-    }
-
     private void processAttributes(final Context context, final AttributeSet attrs) {
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN_MR1)
-            initDefaultAttributes(attrs);
-        else
-            initDefaultAttributes17(attrs);
-
+        initDefaultAttributes17(attrs);
         TypedArray attrsArray = context.obtainStyledAttributes(attrs, R.styleable.CuteButton, 0, 0);
         initAttributes(attrsArray);
         attrsArray.recycle();
