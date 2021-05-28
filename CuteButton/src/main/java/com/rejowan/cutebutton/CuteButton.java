@@ -166,9 +166,7 @@ public class CuteButton extends LinearLayout {
     }
 
     private void processAttributes(final Context context, final AttributeSet attrs) {
-
         initDefaultAttributes(attrs);
-
         TypedArray attrsArray = context.obtainStyledAttributes(attrs, R.styleable.CuteButton, 0, 0);
         initAttributes(attrsArray);
         attrsArray.recycle();
@@ -188,7 +186,6 @@ public class CuteButton extends LinearLayout {
         };
 
         TypedArray defAttrsArray = context.obtainStyledAttributes(attrs, defAttr);
-        //gravity = defAttrsArray.getInt(0, gravity);
         padding = defAttrsArray.getDimensionPixelSize(1, padding);
         paddingLeft = paddingTop = paddingRight = paddingBottom = padding;
 
@@ -199,23 +196,15 @@ public class CuteButton extends LinearLayout {
         paddingLeft = defAttrsArray.getDimensionPixelSize(6, paddingLeft);
         paddingRight = defAttrsArray.getDimensionPixelSize(7, paddingRight);
 
-
         defAttrsArray.recycle();
 
     }
 
-
-
-
-
     private void initAttributes(TypedArray attrs) {
 
         radius = attrs.getDimension(R.styleable.CuteButton_cb_borderRadius, radius);
-
         borderColor = attrs.getColor(R.styleable.CuteButton_cb_borderColor, borderColor);
         borderWidth = (int) attrs.getDimension(R.styleable.CuteButton_cb_borderWidth, borderWidth);
-
-
         backgroundColor = attrs.getColor(R.styleable.CuteButton_cb_bgColor, backgroundColor);
         disableColor = attrs.getColor(R.styleable.CuteButton_cb_bgColorDisabled, disableColor);
 
@@ -227,9 +216,6 @@ public class CuteButton extends LinearLayout {
         textSize = attrs.getDimensionPixelSize(R.styleable.CuteButton_cb_textSize, textSize);
 
         textStyle = attrs.getInt(R.styleable.CuteButton_cb_textStyle, textStyle);
-
-		/*Log.e("TAG", "Dimension "+attrs.getDimension(R.styleable.CuteButton_textSize, textSize));
-		Log.e("TAG", "DimensionPixelSize "+attrs.getDimensionPixelSize(R.styleable.CuteButton_textSize, textSize));*/
 
         textAllCaps = attrs.getBoolean(R.styleable.CuteButton_cb_textAllCaps, textAllCaps);
 
@@ -298,18 +284,6 @@ public class CuteButton extends LinearLayout {
             }
         }
 
-
-		/*DrawableHelper helper = new DrawableHelper.Builder()
-			  .setBackgroundColor(backgroundColor)
-			  .setFocusColor(focusColor)
-			  .setDisabledColor(disabledColor)
-			  .setBorderWidth(borderWidth)
-			  .setBorderColor(borderColor)
-			  .setRadius((int) radius)
-			  .build();
-
-		helper.setBackground(this, isEnabled);*/
-
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
@@ -324,21 +298,16 @@ public class CuteButton extends LinearLayout {
 
     private void setupTextView() {
         textView = new TextView(context);
-        //textView.setBackgroundColor(Color.BLUE);
         LayoutParams textViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         textView.setLayoutParams(textViewParams);
 
-		/*if (text == null || text.isEmpty()) {
-			text = "";
-			return;
-		}*/
+
 
         textView.setText(text);
         textView.setTextColor(isEnabled ? textColor : disabledTextColor);
         textView.setTextSize(pxToSp(context, textSize));
         textView.setAllCaps(textAllCaps);
 
-        // font style normal, bold, italic
         if (textStyle == 2) {
             textView.setTypeface(textView.getTypeface(), Typeface.ITALIC);
         } else if (textStyle == 1) {
@@ -347,35 +316,14 @@ public class CuteButton extends LinearLayout {
             textView.setTypeface(textView.getTypeface(), Typeface.NORMAL);
         }
 
-        //textView.setEnabled(isEnabled());
-
         textView.setGravity(gravity);
     }
 
-	/*public static int spToPx(final Context context, final float sp) {
-		return Math.round(sp * context.getResources().getDisplayMetrics().scaledDensity);
-	}
-
-	public static int pxToDp(final Context context, final float px) {
-		return Math.round(px / context.getResources().getDisplayMetrics().density);
-	}
-
-	public static int dpToPx(final Context context, final float dp) {
-		return Math.round(dp * context.getResources().getDisplayMetrics().density);
-	}*/
 
     private void setupImageView() {
         imageView = new ImageView(context);
 
-		/*if (drawableResource == 0 && (fontIcon == null || fontIcon.isEmpty())) {
-			return;
 
-		}*/
-
-        //imageView = new ImageView(context);
-
-
-        // add drawable icon to imageview
         if (drawableResource != 0) {
             int width = iconSize;
             int height = iconSize;
@@ -392,31 +340,6 @@ public class CuteButton extends LinearLayout {
 
         updateIconPadding();
 
-        // icon padding
-		/*LayoutParams imageViewParams;
-		if (iconPosition == POSITION_TOP || iconPosition == POSITION_BOTTOM) {
-			imageViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		} else {
-			imageViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		}*/
-
-		/*if (textView != null && imageView != null) {
-			if (iconPosition == POSITION_LEFT) {
-				imageViewParams.setMargins(0, 0, getDrawablePadding(), 0);
-			} else if (iconPosition == POSITION_TOP) {
-				imageViewParams.setMargins(0, 0, 0, getDrawablePadding());
-			} else if (iconPosition == POSITION_RIGHT) {
-				imageViewParams.setMargins(getDrawablePadding(), 0, 0, 0);
-			} else if (iconPosition == POSITION_BOTTOM) {
-				imageViewParams.setMargins(0, getDrawablePadding(), 0, 0);
-			}
-		}*/
-
-
-        //imageView.setEnabled(isEnabled());
-
-        //imageView.setLayoutParams(imageViewParams);
-        //imageView.setBackgroundColor(Color.RED);
     }
 
     private void updateGravity() {

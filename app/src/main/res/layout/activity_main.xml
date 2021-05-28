@@ -12,8 +12,8 @@
         android:id="@+id/cuteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="30dp"
-        app:cb_iconPadding="30dp"
+        android:padding="20dp"
+        app:cb_iconPadding="20dp"
         app:cb_bgColor="#2D80C1"
         app:cb_bgColorFocus="#0B3E67"
         app:cb_borderColor="#2ED13A"
@@ -23,10 +23,10 @@
         app:cb_gravity="center"
         app:cb_icon="@drawable/ic_baseline_star_24"
         app:cb_iconPosition="start"
-        app:cb_iconSize="80dp"
+        app:cb_iconSize="60dp"
         app:cb_text="Hello"
         app:cb_textColor="#fff"
-        app:cb_textSize="80sp"
+        app:cb_textSize="60sp"
         app:cb_textStyle="bold" />
 
 
