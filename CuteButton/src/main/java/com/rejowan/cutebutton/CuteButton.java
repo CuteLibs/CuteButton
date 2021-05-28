@@ -5,10 +5,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
@@ -74,11 +71,9 @@ public class CuteButton extends LinearLayout {
     private String text = "";
     private int drawableResource = 0;
     private Drawable drawable = null;
-    private String fontIcon = "";
     private int iconPosition = POSITION_LEFT;
-    private int iconColor = 0;
-    private int iconSize = 37;
-    private int iconPadding = 0;
+    private int iconSize = 0;
+    private int iconPadding = 20;
     private int lGravity = 0;
 
     private Typeface awesomeIconTypeFace = null;
@@ -186,6 +181,16 @@ public class CuteButton extends LinearLayout {
 
         updateGravity();
 
+
+        updateIconPadding();
+    }
+
+    private void setupSize() {
+        int width = iconSize;
+        int height = iconSize;
+        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width, height);
+        imageView.setLayoutParams(parms);
+
     }
 
     private void processAttributes(final Context context, final AttributeSet attrs) {
@@ -292,12 +297,10 @@ public class CuteButton extends LinearLayout {
         textAllCaps = attrs.getBoolean(R.styleable.CuteButton_cb_textAllCaps, textAllCaps);
 
 
-        fontIcon = attrs.getString(R.styleable.CuteButton_cb_fontIcon);
         iconSize = attrs.getDimensionPixelSize(R.styleable.CuteButton_cb_iconSize, iconSize);
-        iconColor = attrs.getColor(R.styleable.CuteButton_cb_iconColor, iconColor);
         iconPosition = attrs.getInt(R.styleable.CuteButton_cb_iconPosition, iconPosition);
 
-        drawableResource = attrs.getResourceId(R.styleable.CuteButton_cb_iconDrawable, drawableResource);
+        drawableResource = attrs.getResourceId(R.styleable.CuteButton_cb_icon, drawableResource);
         iconPadding = attrs.getDimensionPixelSize(R.styleable.CuteButton_cb_iconPadding, iconPadding);
 
         lGravity = attrs.getInt(R.styleable.CuteButton_cb_gravity, lGravity);
@@ -434,21 +437,14 @@ public class CuteButton extends LinearLayout {
 
         //imageView = new ImageView(context);
 
-        // change iconColor to textColor if user not defined
-        if (iconColor == 0) {
-            iconColor = textColor;
-        }
-
         // add font_awesome icon to imageView
-        if (fontIcon != null && !fontIcon.isEmpty()) {
-            int color = isEnabled() ? iconColor : disabledTextColor;
-            imageView.setImageBitmap(textToBitmap(fontIcon, iconSize, color));
-        }
 
         // add drawable icon to imageview
         if (drawableResource != 0) {
-            LayoutParams layoutParams = new LayoutParams(iconSize, iconSize);
-            imageView.setLayoutParams(layoutParams);
+            int width = iconSize;
+            int height = iconSize;
+            LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width, height);
+            imageView.setLayoutParams(parms);
             imageView.setImageResource(drawableResource);
         }
 
@@ -507,7 +503,7 @@ public class CuteButton extends LinearLayout {
     }
 
     private void updateIconPadding() {
-        LayoutParams imageViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        LayoutParams imageViewParams = new LayoutParams(iconSize, iconSize);
 
         if (iconPosition == POSITION_LEFT) {
             imageViewParams.setMargins(0, 0, getDrawablePadding(), 0);
@@ -531,57 +527,6 @@ public class CuteButton extends LinearLayout {
         return fixedIconPadding;
     }
 
-    private Bitmap getFontBitmap() {
-
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setColor(iconColor);
-
-        if (awesomeIconTypeFace != null && !isInEditMode()) {
-            paint.setTypeface(awesomeIconTypeFace);
-            paint.setTextSize(iconSize);
-        } else {
-            fontIcon = "o";
-            paint.setTextSize(iconSize - 15);
-        }
-
-        paint.setTextAlign(Paint.Align.LEFT);
-        float baseline = -paint.ascent(); // ascent() is negative
-        int width = (int) (paint.measureText(fontIcon) + 0.5f); // round
-        int height = (int) (baseline + paint.descent() + 0.5f);
-        Bitmap image = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(image);
-        canvas.drawText(fontIcon, 0, baseline, paint);
-        return image;
-    }
-
-    private Bitmap textToBitmap(String text, float iconSize, int textColor) {
-
-		/*if (awesomeIconTypeFace == null) {
-			return null;
-		}*/
-
-        //float tSize = iconSize != 0 ? iconSize : spToPx(context, this.fixedTextSize);
-
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setColor(textColor);
-
-        if (awesomeIconTypeFace != null && !isInEditMode()) {
-            paint.setTypeface(awesomeIconTypeFace);
-            paint.setTextSize(iconSize);
-        } else {
-            text = "O";
-            paint.setTextSize((float) (iconSize / 2.5));
-        }
-
-        paint.setTextAlign(Paint.Align.LEFT);
-        float baseline = -paint.ascent(); // ascent() is negative
-        int width = (int) (paint.measureText(text) + 0.5f); // round
-        int height = (int) (baseline + paint.descent() + 0.5f);
-        Bitmap image = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(image);
-        canvas.drawText(text, 0, baseline, paint);
-        return image;
-    }
 
     public boolean getAllCaps() {
         return textAllCaps;
@@ -714,23 +659,9 @@ public class CuteButton extends LinearLayout {
         setupBackground();
     }
 
-    public void setFontIcon(String fontIcon) {
-        this.fontIcon = fontIcon;
-        imageView.setImageBitmap(getFontBitmap());
-    }
 
     public int getIconSize() {
         return iconSize;
-    }
-
-    public void setIconSize(int iconSize) {
-        this.iconSize = iconSize;
-        imageView.setImageBitmap(getFontBitmap());
-    }
-
-    public void setIconColor(int color) {
-        this.iconColor = color;
-        imageView.setImageBitmap(getFontBitmap());
     }
 
     public void setIconPosition(int position) {

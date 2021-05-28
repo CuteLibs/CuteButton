@@ -32,9 +32,7 @@
             <flag name="bold" value="1" />
             <flag name="italic" value="2" />
         </attr>
-        <attr name="cb_fontIcon" format="string" />
         <attr name="cb_iconSize" format="dimension" />
-        <attr name="cb_iconColor" format="color" />
         <attr name="cb_iconPosition" format="enum">
             <enum name="start" value="1" />
             <enum name="end" value="2" />
@@ -43,7 +41,7 @@
             <enum name="left" value="1" />
             <enum name="right" value="2" />
         </attr>
-        <attr name="cb_iconDrawable" format="reference" />
+        <attr name="cb_icon" format="reference" />
         <attr name="cb_iconPadding" format="dimension" />
         <attr name="cb_gravity" format="enum">
             <enum name="center" value="0" />

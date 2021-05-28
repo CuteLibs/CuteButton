@@ -11,15 +11,13 @@
     <com.rejowan.cutebutton.CuteButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="30dp"
         app:cb_bgColor="#00838F"
         app:cb_bgColorFocus="#006064"
-        app:cb_gravity="right"
-        app:cb_iconDrawable="@drawable/ic_baseline_star_24"
+        app:cb_gravity="center"
+        app:cb_icon="@drawable/ic_baseline_star_24"
         app:cb_iconPadding="10dp"
-        app:cb_iconPosition="start"
+        app:cb_iconSize="100dp"
         app:cb_text="Hello"
-        app:cb_iconSize="50dp"
         app:cb_textColor="#fff"
         app:cb_textSize="100sp"
         app:cb_textStyle="bold" />
