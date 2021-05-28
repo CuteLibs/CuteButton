@@ -3,6 +3,7 @@ package com.rejowan.cutebutton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Let's see the problem", Toast.LENGTH_SHORT).show();
 
+        CuteButton cuteButton = findViewById(R.id.cuteButton);
+        cuteButton.setOnClickListener(v -> {
+            Toast.makeText(this, "Testing Button", Toast.LENGTH_SHORT).show();
+        });
 
     }
 }
