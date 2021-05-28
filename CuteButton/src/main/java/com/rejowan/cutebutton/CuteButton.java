@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
+import androidx.annotation.RequiresApi;
 
 
 public class CuteButton extends LinearLayout {
@@ -140,9 +141,9 @@ public class CuteButton extends LinearLayout {
 
         setupBackground();
 
+
         super.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
 
-        //super.setPadding(0, 0, 0, 0);
 
 
         this.removeAllViews();
@@ -161,15 +162,51 @@ public class CuteButton extends LinearLayout {
 
 
         updateIconPadding();
+
     }
 
     private void processAttributes(final Context context, final AttributeSet attrs) {
+
         initDefaultAttributes17(attrs);
+
         TypedArray attrsArray = context.obtainStyledAttributes(attrs, R.styleable.CuteButton, 0, 0);
         initAttributes(attrsArray);
         attrsArray.recycle();
     }
 
+    private void initDefaultAttributes(AttributeSet attrs) {
+        int[] defAttr = new int[]{
+                android.R.attr.gravity,
+                android.R.attr.padding,
+                android.R.attr.paddingLeft,
+                android.R.attr.paddingTop,
+                android.R.attr.paddingRight,
+                android.R.attr.paddingBottom
+        };
+
+        TypedArray defAttrsArray = context.obtainStyledAttributes(attrs, defAttr);
+        //gravity = defAttrsArray.getInt(0, gravity);
+        padding = defAttrsArray.getDimensionPixelSize(1, padding);
+
+        // initialize padding to all
+        if (padding != 0) {
+            paddingLeft = paddingTop = paddingRight = paddingBottom = padding;
+        }
+
+        paddingLeft = defAttrsArray.getDimensionPixelSize(2, paddingLeft);
+        paddingTop = defAttrsArray.getDimensionPixelSize(3, paddingTop);
+        paddingRight = defAttrsArray.getDimensionPixelSize(4, paddingRight);
+        paddingBottom = defAttrsArray.getDimensionPixelSize(5, paddingBottom);
+        paddingLeft = defAttrsArray.getDimensionPixelSize(6, paddingLeft);
+        paddingRight = defAttrsArray.getDimensionPixelSize(7, paddingRight);
+
+
+        defAttrsArray.recycle();
+
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     private void initDefaultAttributes17(AttributeSet attrs) {
         int[] defAttr = new int[]{
                 android.R.attr.gravity,
@@ -199,11 +236,10 @@ public class CuteButton extends LinearLayout {
 
     }
 
-    /**
-     * Initialize Attributes arrays
-     *
-     * @param attrs : Attributes array
-     */
+
+
+
+
     private void initAttributes(TypedArray attrs) {
 
         radius = attrs.getDimension(R.styleable.CuteButton_cb_borderRadius, radius);

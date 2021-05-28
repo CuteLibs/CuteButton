@@ -10,22 +10,22 @@
 
     <com.rejowan.cutebutton.CuteButton
         android:id="@+id/cuteButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        app:cb_bgColor="#388E3C"
-        app:cb_bgColorFocus="#1B5E20"
-        app:cb_borderColor="#000"
+        android:padding="30dp"
+        app:cb_bgColor="#2D80C1"
+        app:cb_bgColorFocus="#0B3E67"
+        app:cb_borderColor="#2ED13A"
         app:cb_borderRadius="20dp"
         app:cb_borderWidth="3dp"
         app:cb_enabled="true"
         app:cb_gravity="center"
         app:cb_icon="@drawable/ic_baseline_star_24"
-        app:cb_iconPadding="10dp"
-        app:cb_iconSize="50dp"
+        app:cb_iconPosition="start"
+        app:cb_iconSize="80dp"
         app:cb_text="Hello"
         app:cb_textColor="#fff"
-        app:cb_textSize="50sp"
+        app:cb_textSize="80sp"
         app:cb_textStyle="bold" />
 
 
