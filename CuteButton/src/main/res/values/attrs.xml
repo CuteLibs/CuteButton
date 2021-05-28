@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <attr name="cb_borderWidth" format="dimension" />
+    <attr name="cb_borderColor" format="color" />
+    <attr name="cb_borderRadius" format="dimension" />
+    <attr name="cb_bgColor" format="color" />
+    <attr name="cb_bgColorDisabled" format="color" />
+    <attr name="cb_bgColorFocus" format="color" />
+    <attr name="cb_enabled" format="boolean" />
+
+    <attr name="cb_shape" format="integer">
+        <flag name="rectangle" value="101" />
+        <flag name="oval" value="102" />
+    </attr>
+
+    <declare-styleable name="CuteButton">
+        <attr name="cb_borderWidth" />
+        <attr name="cb_borderColor" />
+        <attr name="cb_borderRadius" />
+        <attr name="cb_bgColor" />
+        <attr name="cb_bgColorDisabled" />
+        <attr name="cb_bgColorFocus" />
+        <attr name="cb_enabled" />
+        <attr name="cb_textColor" format="color" />
+        <attr name="cb_textColorDisabled" format="color" />
+        <attr name="cb_text" format="string" />
+        <attr name="cb_textSize" format="dimension" />
+        <attr name="cb_textAllCaps" format="reference|boolean" />
+        <attr name="cb_textStyle" format="integer">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="cb_fontIcon" format="string" />
+        <attr name="cb_iconSize" format="dimension" />
+        <attr name="cb_iconColor" format="color" />
+        <attr name="cb_iconPosition" format="enum">
+            <enum name="start" value="1" />
+            <enum name="end" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="cb_iconDrawable" format="reference" />
+        <attr name="cb_iconPadding" format="dimension" />
+        <attr name="cb_gravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="top" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
 
 </resources>
