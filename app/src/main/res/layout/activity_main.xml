@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="30dp"
+        app:cb_iconPadding="30dp"
         app:cb_bgColor="#2D80C1"
         app:cb_bgColorFocus="#0B3E67"
         app:cb_borderColor="#2ED13A"
