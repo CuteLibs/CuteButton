@@ -447,10 +447,13 @@ public class CuteButton extends LinearLayout {
 
         // add drawable icon to imageview
         if (drawableResource != 0) {
+            LayoutParams layoutParams = new LayoutParams(iconSize, iconSize);
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(drawableResource);
         }
 
         if (drawable != null) {
+
             imageView.setImageDrawable(drawable);
         }
 
