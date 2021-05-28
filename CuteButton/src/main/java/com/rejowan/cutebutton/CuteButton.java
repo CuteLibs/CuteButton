@@ -22,7 +22,6 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.RequiresApi;
 
-//import android.support.annotation.RequiresApi;
 
 public class CuteButton extends LinearLayout {
 
@@ -46,7 +45,6 @@ public class CuteButton extends LinearLayout {
     public static final int TEXT_STYLE_ITALIC = 2;
 
 
-    private static final String FONT_AWESOME = "fonts/fontawesome-webfont.ttf";
 
 
     private final Context context;
@@ -76,7 +74,6 @@ public class CuteButton extends LinearLayout {
     private int iconPadding = 20;
     private int lGravity = 0;
 
-    private Typeface awesomeIconTypeFace = null;
     private ImageView imageView;
     private TextView textView;
 
@@ -90,11 +87,6 @@ public class CuteButton extends LinearLayout {
     public CuteButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
-
-        //TypedArray attrsArray = context.obtainStyledAttributes(attrs, R.styleable.CButton, 0, 0);
-		/*TypedArray attrsArray = context.obtainStyledAttributes(attrs, R.styleable.CButton, 0, 0);
-		initAttributes(attrsArray);
-		attrsArray.recycle();*/
 
         processAttributes(context, attrs);
 
@@ -124,17 +116,9 @@ public class CuteButton extends LinearLayout {
         return Math.round(px / context.getResources().getDisplayMetrics().scaledDensity);
     }
 
-    public static Typeface getAwesomeTypeface(Context context) {
-        return Typeface.createFromAsset(context.getAssets(), FONT_AWESOME);
-    }
+
 
     private void initializeView() {
-
-        if (!isInEditMode()) {
-            awesomeIconTypeFace = getAwesomeTypeface(context);
-            //Log.e("TAG", "awesomeIconTypeFace");
-        }
-
 
         if (iconPosition == POSITION_TOP || iconPosition == POSITION_BOTTOM) {
             this.setOrientation(LinearLayout.VERTICAL);
@@ -437,7 +421,6 @@ public class CuteButton extends LinearLayout {
 
         //imageView = new ImageView(context);
 
-        // add font_awesome icon to imageView
 
         // add drawable icon to imageview
         if (drawableResource != 0) {

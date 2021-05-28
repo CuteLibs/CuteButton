@@ -11,9 +11,9 @@
     <com.rejowan.cutebutton.CuteButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cb_bgColor="#00838F"
-        app:cb_bgColorFocus="#006064"
-        app:cb_gravity="center"
+        app:cb_bgColor="#388E3C"
+        app:cb_bgColorFocus="#1B5E20"
+        app:cb_gravity="left"
         app:cb_icon="@drawable/ic_baseline_star_24"
         app:cb_iconPadding="10dp"
         app:cb_iconSize="100dp"
