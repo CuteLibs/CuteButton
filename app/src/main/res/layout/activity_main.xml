@@ -9,12 +9,12 @@
 
 
     <com.rejowan.cutebutton.CuteButton
+        android:id="@+id/cuteButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cb_bgColor="#388E3C"
         app:cb_bgColorFocus="#1B5E20"
         app:cb_gravity="left"
-        android:id="@+id/cuteButton"
         app:cb_icon="@drawable/ic_baseline_star_24"
         app:cb_iconPadding="10dp"
         app:cb_iconSize="100dp"
