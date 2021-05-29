@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         CuteButton cuteButton = findViewById(R.id.cuteButton);
         cuteButton.setOnClickListener(v -> {
             cuteButton.setBackgroundColor(Color.MAGENTA);
+            cuteButton.setText("Changed");
+            cuteButton.setBorderColor(Color.BLUE);
         });
 
 
