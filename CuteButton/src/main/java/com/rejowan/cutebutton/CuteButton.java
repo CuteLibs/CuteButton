@@ -497,6 +497,7 @@ public class CuteButton extends LinearLayout {
         initializeView();
     }
 
+    @SuppressWarnings("unused")
     public int getDisabledColor() {
         return disableColor;
     }
