@@ -441,20 +441,25 @@ public class CuteButton extends LinearLayout {
         return this.borderColor;
     }
 
+    @SuppressWarnings("unused")
     public void setBorderColor(int color) {
         this.borderColor = color;
         setupBackground();
     }
 
+    @SuppressWarnings("unused")
     public float getRadius() {
         return radius;
     }
 
+
+    @SuppressWarnings("unused")
     public void setRadius(float size) {
         this.radius = size;
         setupBackground();
     }
 
+    @SuppressWarnings("unused")
     public int getBackgroundColor() {
         return this.backgroundColor;
     }
