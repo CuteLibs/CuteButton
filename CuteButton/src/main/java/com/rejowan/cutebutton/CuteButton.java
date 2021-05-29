@@ -501,6 +501,7 @@ public class CuteButton extends LinearLayout {
         return disableColor;
     }
 
+    @SuppressWarnings("unused")
     public void setDisabledColor(int color) {
         this.disableColor = color;
         setupBackground();
