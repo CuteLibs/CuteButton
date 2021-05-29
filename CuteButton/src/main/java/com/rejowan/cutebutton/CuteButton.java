@@ -135,10 +135,7 @@ public class CuteButton extends LinearLayout {
 
 
         setupTextView();
-
         setupImageView();
-        //if (imageView != null) this.addView(imageView);
-
         setupBackground();
 
 

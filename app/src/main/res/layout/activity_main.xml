@@ -13,7 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="30dp"
-        app:cb_iconPadding="50dp"
         app:cb_bgColor="#2D8051"
         app:cb_bgColorFocus="#043E67"
         app:cb_borderColor="#200000"
@@ -22,12 +21,16 @@
         app:cb_enabled="true"
         app:cb_gravity="center"
         app:cb_icon="@drawable/ic_baseline_star_24"
+        app:cb_iconPadding="50dp"
         app:cb_iconPosition="top"
-        app:cb_iconSize="60dp"
-        app:cb_text="Hello"
-        app:cb_textColor="#fff"
-        app:cb_textSize="60sp"
-        app:cb_textStyle="bold" />
+        app:cb_iconSize="100dp"
+        app:cb_text="Hello!"
+        app:cb_textColor="#000"
+        app:cb_textSize="100sp"
+        app:cb_textStyle="bold"
+        app:cb_bgColorDisabled="#ddd"
+        app:cb_textAllCaps="false"
+        app:cb_textColorDisabled="#ccc"/>
 
 
 </LinearLayout>
