@@ -22,7 +22,7 @@
         app:cb_enabled="true"
         app:cb_gravity="center"
         app:cb_icon="@drawable/ic_baseline_star_24"
-        app:cb_iconPosition="start"
+        app:cb_iconPosition="top"
         app:cb_iconSize="60dp"
         app:cb_text="Hello"
         app:cb_textColor="#fff"
