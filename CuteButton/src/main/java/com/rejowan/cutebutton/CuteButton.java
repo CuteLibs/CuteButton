@@ -20,7 +20,6 @@ import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
-import androidx.annotation.RequiresApi;
 
 
 public class CuteButton extends LinearLayout {
@@ -268,11 +267,7 @@ public class CuteButton extends LinearLayout {
 
             states.addState(new int[]{}, defaultDrawable);
 
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-                this.setBackgroundDrawable(states);
-            } else {
-                this.setBackground(states);
-            }
+            this.setBackground(states);
         }
 
     }
