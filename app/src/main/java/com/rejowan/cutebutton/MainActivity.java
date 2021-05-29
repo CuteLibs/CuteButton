@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         CuteButton cuteButton = findViewById(R.id.cuteButton);
         cuteButton.setOnClickListener(v -> {
-            Toast.makeText(this, "Testing Button", Toast.LENGTH_SHORT).show();
+            cuteButton.setBackgroundColor(Color.MAGENTA);
         });
 
 

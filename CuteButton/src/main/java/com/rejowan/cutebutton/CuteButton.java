@@ -88,7 +88,7 @@ public class CuteButton extends LinearLayout {
     private int paddingRight = 20;
     private int paddingBottom = 20;
     private String text = "";
-    private int drawableResource = 0;
+    private int icon = 0;
     private Drawable drawable = null;
     private int iconPosition = POSITION_LEFT;
     private int iconSize = 0;
@@ -239,7 +239,7 @@ public class CuteButton extends LinearLayout {
         iconSize = attrs.getDimensionPixelSize(R.styleable.CuteButton_cb_iconSize, iconSize);
         iconPosition = attrs.getInt(R.styleable.CuteButton_cb_iconPosition, iconPosition);
 
-        drawableResource = attrs.getResourceId(R.styleable.CuteButton_cb_icon, drawableResource);
+        icon = attrs.getResourceId(R.styleable.CuteButton_cb_icon, icon);
         iconPadding = attrs.getDimensionPixelSize(R.styleable.CuteButton_cb_iconPadding, iconPadding);
 
         lGravity = attrs.getInt(R.styleable.CuteButton_cb_gravity, lGravity);
@@ -330,12 +330,12 @@ public class CuteButton extends LinearLayout {
         imageView = new ImageView(context);
 
 
-        if (drawableResource != 0) {
+        if (icon != 0) {
             int width = iconSize;
             int height = iconSize;
             LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width, height);
             imageView.setLayoutParams(parms);
-            imageView.setImageResource(drawableResource);
+            imageView.setImageResource(icon);
         }
 
         if (drawable != null) {
@@ -555,8 +555,8 @@ public class CuteButton extends LinearLayout {
     }
 
     @SuppressWarnings("unused")
-    public void setDrawableResource(@DrawableRes int resource) {
-        this.drawableResource = resource;
+    public void setIcon(@DrawableRes int resource) {
+        this.icon = resource;
         imageView.setImageResource(resource);
     }
 
