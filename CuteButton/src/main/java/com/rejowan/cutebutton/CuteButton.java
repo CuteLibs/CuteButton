@@ -368,30 +368,32 @@ public class CuteButton extends LinearLayout {
         if (iconPadding != 0) {
             return iconPadding;
         }
-        int fixedIconPadding = 5;
-        return fixedIconPadding;
+        return 5;
     }
 
-
+    @SuppressWarnings("unused")
     public boolean getAllCaps() {
         return textAllCaps;
     }
 
+    @SuppressWarnings("unused")
     public void setAllCaps(boolean allCaps) {
         this.textAllCaps = allCaps;
         textView.setAllCaps(allCaps);
     }
-
+    @SuppressWarnings("unused")
     public String getText() {
         return text;
     }
 
+    @SuppressWarnings("unused")
     public void setText(String text) {
         this.text = text;
         if (textView != null) textView.setText(text);
         else setupTextView();
     }
 
+    @SuppressWarnings("unused")
     public int getTextStyle() {
         return textStyle;
     }
@@ -542,11 +544,7 @@ public class CuteButton extends LinearLayout {
     public void setTextGravity(int gravity) {
         this.lGravity = gravity;
         initializeView();
-        //if (textView != null)
-        //updateGravity();
-        //updateIconPadding();
-		/*else
-			initializeView();*/
+
     }
 
 
