@@ -488,10 +488,12 @@ public class CuteButton extends LinearLayout {
         initializeView();
     }
 
+    @SuppressWarnings("unused")
     public int getDisabledTextColor() {
         return disabledTextColor;
     }
 
+    @SuppressWarnings("unused")
     public void setDisabledTextColor(int color) {
         this.disabledTextColor = color;
         initializeView();
