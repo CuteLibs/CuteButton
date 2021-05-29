@@ -288,7 +288,6 @@ public class CuteButton extends LinearLayout {
         textView.setLayoutParams(textViewParams);
 
 
-
         textView.setText(text);
         textView.setTextColor(isEnabled ? textColor : disabledTextColor);
         textView.setTextSize(pxToSp(context, textSize));
@@ -381,6 +380,7 @@ public class CuteButton extends LinearLayout {
         this.textAllCaps = allCaps;
         textView.setAllCaps(allCaps);
     }
+
     @SuppressWarnings("unused")
     public String getText() {
         return text;
@@ -531,6 +531,7 @@ public class CuteButton extends LinearLayout {
         initializeView();
     }
 
+    @SuppressWarnings("unused")
     public int getIconPadding() {
         return this.iconPadding;
     }
