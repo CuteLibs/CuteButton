@@ -535,12 +535,13 @@ public class CuteButton extends LinearLayout {
         return this.iconPadding;
     }
 
+    @SuppressWarnings("unused")
     public void setIconPadding(int padding) {
         this.iconPadding = padding;
-        //updateIconPadding();
         initializeView();
     }
 
+    @SuppressWarnings("unused")
     public void setTextGravity(int gravity) {
         this.lGravity = gravity;
         initializeView();
