@@ -224,21 +224,17 @@ public class CuteButton extends LinearLayout {
     private void setupBackground() {
 
 
-        // Default Drawable
         GradientDrawable defaultDrawable = new GradientDrawable();
         defaultDrawable.setCornerRadius(radius);
         defaultDrawable.setColor(backgroundColor);
 
-        //Focus Drawable
         GradientDrawable focusDrawable = new GradientDrawable();
         focusDrawable.setCornerRadius(radius);
         focusDrawable.setColor(focusColor);
 
-        // Disabled Drawable
         GradientDrawable disabledDrawable = new GradientDrawable();
         disabledDrawable.setCornerRadius(radius);
         disabledDrawable.setColor(disableColor);
-        //disabledDrawable.setStroke(mBorderWidth, mDisabledBorderColor);
 
 
         if (borderColor != 0 && borderWidth > 0) {
@@ -254,7 +250,6 @@ public class CuteButton extends LinearLayout {
 
             StateListDrawable states = new StateListDrawable();
 
-            // Focus/Pressed Drawable
             GradientDrawable drawable2 = new GradientDrawable();
             drawable2.setCornerRadius(radius);
             drawable2.setColor(focusColor);
@@ -329,19 +324,14 @@ public class CuteButton extends LinearLayout {
 
     private void updateGravity() {
         if (lGravity == GRAVITY_CENTER) {
-            // center
             super.setGravity(Gravity.CENTER);
         } else if (lGravity == GRAVITY_LEFT) {
-            // left
             super.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
         } else if (lGravity == GRAVITY_RIGHT) {
-            // right
             super.setGravity(Gravity.END | Gravity.CENTER_VERTICAL);
         } else if (lGravity == GRAVITY_TOP) {
-            // top
             super.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
         } else if (lGravity == GRAVITY_BOTTOM) {
-            // bottom
             super.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
         }
     }
