@@ -511,21 +511,19 @@ public class CuteButton extends LinearLayout {
         return iconSize;
     }
 
+    @SuppressWarnings("unused")
     public void setIconPosition(int position) {
         this.iconPosition = position;
         initializeView();
     }
 
-	/*public int getIconPosition() {
-		return iconPosition;
-	}*/
-
+    @SuppressWarnings("unused")
     public void setDrawableResource(@DrawableRes int resource) {
         this.drawableResource = resource;
-        //initializeView();
         imageView.setImageResource(resource);
     }
 
+    @SuppressWarnings("unused")
     public void setDrawable(Drawable drawable) {
         this.drawable = drawable;
         initializeView();
