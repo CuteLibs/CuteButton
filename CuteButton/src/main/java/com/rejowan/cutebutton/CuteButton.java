@@ -507,6 +507,7 @@ public class CuteButton extends LinearLayout {
     }
 
 
+    @SuppressWarnings("unused")
     public int getIconSize() {
         return iconSize;
     }
