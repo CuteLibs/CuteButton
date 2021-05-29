@@ -138,11 +138,7 @@ public class CuteButton extends LinearLayout {
         setupImageView();
         setupBackground();
 
-
         super.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
-
-
-
         this.removeAllViews();
 
         if (iconPosition == POSITION_RIGHT || iconPosition == POSITION_BOTTOM) {
@@ -156,8 +152,6 @@ public class CuteButton extends LinearLayout {
 
 
         updateGravity();
-
-
         updateIconPadding();
 
     }
