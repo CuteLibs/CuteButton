@@ -483,7 +483,6 @@ public class CuteButton extends LinearLayout {
 
     @Override
     public void setEnabled(boolean enabled) {
-        //super.setEnabled(enabled);
         this.isEnabled = enabled;
         initializeView();
     }
