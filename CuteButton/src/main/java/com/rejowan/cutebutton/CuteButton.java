@@ -398,6 +398,7 @@ public class CuteButton extends LinearLayout {
         return textStyle;
     }
 
+    @SuppressWarnings("unused")
     public void setTextStyle(int style) {
         this.textStyle = style;
         if (textStyle == TEXT_STYLE_ITALIC) {
