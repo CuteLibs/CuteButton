@@ -410,33 +410,40 @@ public class CuteButton extends LinearLayout {
         }
     }
 
+    @SuppressWarnings("unused")
     public float getTextSize() {
         return textSize;
     }
 
+    @SuppressWarnings("unused")
     public void setTextSize(int size) {
         this.textSize = size;
         textView.setTextSize(size);
     }
 
+    @SuppressWarnings("unused")
     public int getTextColor() {
         return this.textColor;
     }
 
+    @SuppressWarnings("unused")
     public void setTextColor(int color) {
         this.textColor = color;
         textView.setTextColor(isEnabled ? textColor : disabledTextColor);
     }
 
+    @SuppressWarnings("unused")
     public int getBorderWidth() {
         return borderWidth;
     }
 
+    @SuppressWarnings("unused")
     public void setBorderWidth(int size) {
         this.borderWidth = size;
         setupBackground();
     }
 
+    @SuppressWarnings("unused")
     public int getBorderColor() {
         return this.borderColor;
     }
@@ -469,19 +476,23 @@ public class CuteButton extends LinearLayout {
         setupBackground();
     }
 
+    @SuppressWarnings("unused")
     public int getFocusColor() {
         return this.focusColor;
     }
 
+    @SuppressWarnings("unused")
     public void setFocusColor(@ColorInt int color) {
         this.focusColor = color;
         setupBackground();
     }
 
+    @SuppressWarnings("unused")
     public int getDisableColor() {
         return disableColor;
     }
 
+    @SuppressWarnings("unused")
     public void setDisableColor(@ColorInt int color) {
         this.disableColor = color;
         setupBackground();
