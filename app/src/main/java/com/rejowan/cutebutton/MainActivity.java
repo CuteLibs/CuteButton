@@ -2,6 +2,7 @@ package com.rejowan.cutebutton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         cuteButton.setOnClickListener(v -> {
             Toast.makeText(this, "Testing Button", Toast.LENGTH_SHORT).show();
         });
+
 
     }
 }
