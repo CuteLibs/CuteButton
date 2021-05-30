@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <attr name="cb_borderWidth" format="dimension" />
-    <attr name="cb_borderColor" format="color" />
-    <attr name="cb_borderRadius" format="dimension" />
-    <attr name="cb_bgColor" format="color" />
-    <attr name="cb_bgColorDisabled" format="color" />
-    <attr name="cb_bgColorFocus" format="color" />
-    <attr name="cb_enabled" format="boolean" />
-
     <declare-styleable name="CuteButton">
-        <attr name="cb_borderWidth" />
-        <attr name="cb_borderColor" />
-        <attr name="cb_borderRadius" />
-        <attr name="cb_bgColor" />
-        <attr name="cb_bgColorDisabled" />
-        <attr name="cb_bgColorFocus" />
-        <attr name="cb_enabled" />
+        <attr name="cb_borderWidth" format="dimension" />
+        <attr name="cb_borderColor" format="color" />
+        <attr name="cb_borderRadius" format="dimension" />
+        <attr name="cb_bgColor" format="color" />
+        <attr name="cb_bgColorDisabled" format="color" />
+        <attr name="cb_bgColorFocus" format="color" />
+        <attr name="cb_enabled" format="boolean" />
         <attr name="cb_textColor" format="color" />
         <attr name="cb_textColorDisabled" format="color" />
         <attr name="cb_text" format="string" />
