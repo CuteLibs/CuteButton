@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,122 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            app:cb_bgColor="#43A047"
+            app:cb_bgColorFocus="#2E7D32"
+            app:cb_text="Yes"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp" />
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            app:cb_bgColor="#f55c47"
+            app:cb_bgColorFocus="#A62323"
+            app:cb_text="No"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            app:cb_bgColor="#e93b81"
+            app:cb_bgColorFocus="#CA316F"
+            app:cb_gravity="center"
+            app:cb_icon="@drawable/ic_baseline_check_24"
+            app:cb_iconPadding="20dp"
+            app:cb_iconSize="25dp"
+            app:cb_text="Confirm"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp"
+            app:cb_textStyle="bold" />
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            app:cb_bgColor="#D62C2C"
+            app:cb_bgColorFocus="#006064"
+            app:cb_gravity="center"
+            app:cb_icon="@drawable/ic_baseline_delete_24"
+            app:cb_iconPadding="20dp"
+            app:cb_iconSize="25dp"
+            app:cb_text="Delete"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp"
+            app:cb_textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            app:cb_bgColor="#fff"
+            app:cb_borderColor="#C62828"
+            app:cb_borderWidth="2dp"
+            app:cb_icon="@drawable/ic_baseline_create_24"
+            app:cb_iconPadding="20dp"
+            app:cb_iconSize="30dp"
+            app:cb_text="Sign Up"
+            app:cb_textColor="#C62828"
+            app:cb_textSize="24sp"
+            app:cb_textStyle="bold" />
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            app:cb_bgColor="#fff"
+            app:cb_borderColor="#6A1B9A"
+            app:cb_borderRadius="40dp"
+            app:cb_borderWidth="2dp"
+            app:cb_icon="@drawable/ic_baseline_login_24"
+            app:cb_iconPadding="10dp"
+            app:cb_iconSize="30dp"
+            app:cb_text="Sign In"
+            app:cb_textColor="#6A1B9A"
+            app:cb_textSize="24sp"
+            app:cb_textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <com.rejowan.cutebutton.CuteButton
@@ -19,22 +134,69 @@
             android:layout_height="55dp"
             android:layout_marginEnd="5dp"
             app:cb_bgColor="#0097A7"
-            app:cb_bgColorFocus="#00838F"
+            app:cb_bgColorFocus="#006064"
             app:cb_borderRadius="40dp"
-            app:cb_icon="@drawable/ic_baseline_star_24"
-            app:cb_iconPadding="20dp"
+            app:cb_icon="@drawable/ic_baseline_arrow_circle_down_24"
+            app:cb_iconPadding="5dp"
             app:cb_iconSize="25dp"
-            app:cb_text="Save"
+            app:cb_text="Download"
             app:cb_textColor="#fff"
-            app:cb_textSize="24sp"
-            app:cb_textStyle="bold" />
+            app:cb_textSize="24sp" />
 
         <com.rejowan.cutebutton.CuteButton
             android:layout_width="190dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="5dp" />
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            app:cb_bgColor="#F4511E"
+            app:cb_bgColorFocus="#D84315"
+            app:cb_borderRadius="40dp"
+            app:cb_icon="@drawable/ic_baseline_add_shopping_cart_24"
+            app:cb_iconPadding="10dp"
+            app:cb_iconSize="25dp"
+            app:cb_text="Buy Now"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            app:cb_bgColor="#3C4A51"
+            app:cb_bgColorFocus="#22292C"
+            app:cb_borderRadius="40dp"
+            app:cb_icon="@drawable/ic_baseline_bookmark_border_24"
+            app:cb_iconPadding="10dp"
+            app:cb_iconSize="24dp"
+            app:cb_text="Bookmark"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp" />
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            app:cb_bgColor="#33A838"
+            app:cb_bgColorFocus="#1C5E1F"
+            app:cb_borderRadius="40dp"
+            app:cb_icon="@drawable/ic_baseline_save_24"
+            app:cb_iconPadding="20dp"
+            app:cb_iconSize="24dp"
+            app:cb_text="Save"
+            app:cb_textColor="#fff"
+            app:cb_textSize="24sp" />
+
 
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
