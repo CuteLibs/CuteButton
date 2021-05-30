@@ -91,8 +91,7 @@ public class CuteButton extends LinearLayout {
     private int icon = 0;
     private Drawable drawable = null;
     private int iconPosition = POSITION_LEFT;
-    private int iconSize = 0;
-    private final int iconSizeDefault = 37;
+    private int iconSize = 37;
     private int iconPadding = 0;
     private int lGravity = 0;
 
@@ -326,7 +325,9 @@ public class CuteButton extends LinearLayout {
 
     private void setupImageView() {
         imageView = new ImageView(context);
-
+        if (icon == 0 ) {
+            iconSize = 0;
+        }
 
         if (icon != 0) {
             int width = iconSize;
@@ -359,6 +360,9 @@ public class CuteButton extends LinearLayout {
     }
 
     private void updateIconPadding() {
+        if (icon == 0) {
+            iconSize = 0;
+        }
         LayoutParams imageViewParams = new LayoutParams(iconSize, iconSize);
 
         if (iconPosition == POSITION_LEFT) {
@@ -544,11 +548,9 @@ public class CuteButton extends LinearLayout {
 
     @SuppressWarnings("unused")
     public int getIconSize() {
-        if (icon != 0 && iconSize == 0) {
-            return iconSizeDefault;
-        } else {
-            return iconSize;
-        }
+
+        return iconSize;
+
     }
 
     @SuppressWarnings("unused")
