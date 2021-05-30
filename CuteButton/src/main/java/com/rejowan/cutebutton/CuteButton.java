@@ -91,7 +91,8 @@ public class CuteButton extends LinearLayout {
     private int icon = 0;
     private Drawable drawable = null;
     private int iconPosition = POSITION_LEFT;
-    private int iconSize = 37;
+    private int iconSize = 0;
+    private final int iconSizeDefault = 37;
     private int iconPadding = 0;
     private int lGravity = 0;
 
@@ -543,7 +544,11 @@ public class CuteButton extends LinearLayout {
 
     @SuppressWarnings("unused")
     public int getIconSize() {
-        return iconSize;
+        if (icon != 0 && iconSize == 0) {
+            return iconSizeDefault;
+        } else {
+            return iconSize;
+        }
     }
 
     @SuppressWarnings("unused")
