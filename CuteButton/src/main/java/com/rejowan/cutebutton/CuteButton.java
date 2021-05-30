@@ -333,7 +333,7 @@ public class CuteButton extends LinearLayout {
             LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width, height);
             imageView.setLayoutParams(parms);
             imageView.setImageResource(icon);
-            iconSize = 50;
+            iconSize = 37;
         }
 
         if (drawable != null) {

@@ -18,13 +18,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
-            app:cb_bgColor="#000"
+            app:cb_bgColor="#0097A7"
             app:cb_bgColorFocus="#222"
             app:cb_icon="@drawable/ic_baseline_star_24"
             app:cb_borderRadius="20dp"
             app:cb_text="Save"
             app:cb_textColor="#fff"
-            app:cb_textSize="17sp"
             app:cb_textStyle="bold" />
 
         <com.rejowan.cutebutton.CuteButton
