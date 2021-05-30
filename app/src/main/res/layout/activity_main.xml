@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
 
-    <com.rejowan.cutebutton.CuteButton
-        android:id="@+id/cuteButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:cb_bgColor="#2D8051"
-        app:cb_bgColorDisabled="#ddd"
-        app:cb_bgColorFocus="#043E67"
-        app:cb_borderColor="#204000"
-        app:cb_borderRadius="30dp"
-        app:cb_borderWidth="1dp"
-        app:cb_enabled="true"
-        app:cb_gravity="center"
-        app:cb_text="Hello"
-        app:cb_textAllCaps="false"
-        app:cb_textColor="#000"
-        app:cb_textColorDisabled="#ccc"
-        app:cb_textSize="20sp" />
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            app:cb_bgColor="#000"
+            app:cb_bgColorFocus="#222"
+            app:cb_icon="@drawable/ic_baseline_star_24"
+            app:cb_borderRadius="20dp"
+            app:cb_text="Save"
+            app:cb_textColor="#fff"
+            app:cb_textSize="17sp"
+            app:cb_textStyle="bold" />
+
+        <com.rejowan.cutebutton.CuteButton
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>
