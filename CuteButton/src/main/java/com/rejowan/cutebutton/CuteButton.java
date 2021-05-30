@@ -249,7 +249,6 @@ public class CuteButton extends LinearLayout {
 
     private void setupBackground() {
 
-
         GradientDrawable defaultDrawable = new GradientDrawable();
         defaultDrawable.setCornerRadius(radius);
         defaultDrawable.setColor(backgroundColor);
@@ -262,11 +261,9 @@ public class CuteButton extends LinearLayout {
         disabledDrawable.setCornerRadius(radius);
         disabledDrawable.setColor(disableColor);
 
-
         if (borderColor != 0 && borderWidth > 0) {
             defaultDrawable.setStroke(borderWidth, borderColor);
         }
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
@@ -290,7 +287,6 @@ public class CuteButton extends LinearLayout {
 
             this.setBackground(states);
         }
-
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
@@ -342,7 +338,6 @@ public class CuteButton extends LinearLayout {
 
             imageView.setImageDrawable(drawable);
         }
-
         updateIconPadding();
 
     }
@@ -582,6 +577,5 @@ public class CuteButton extends LinearLayout {
         initializeView();
 
     }
-
 
 }
