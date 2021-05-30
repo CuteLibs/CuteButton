@@ -343,7 +343,6 @@ public class CuteButton extends LinearLayout {
             imageView.setImageDrawable(drawable);
         }
 
-
         updateIconPadding();
 
     }
