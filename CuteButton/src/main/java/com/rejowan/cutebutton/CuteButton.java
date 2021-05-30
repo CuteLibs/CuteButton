@@ -25,12 +25,12 @@ import androidx.annotation.DrawableRes;
 public class CuteButton extends LinearLayout {
 
 
-    /**
-     * CuteButton Library for Android
-     * Created by K M Rejowan Ahmmed (ahmmedrejowan)
-     * Min Api 21
-     * Target Api 30
-     * Java Version 1.8
+    /*
+     CuteButton Library for Android
+     Created by K M Rejowan Ahmmed (ahmmedrejowan)
+     Min Api 21
+     Target Api 30
+     Java Version 1.8
      */
 
 
@@ -82,11 +82,11 @@ public class CuteButton extends LinearLayout {
     private int disabledTextColor = Color.parseColor("#A0A0A0");
     private boolean textAllCaps = false;
     private int textStyle = 0;
-    private int padding = 20;
-    private int paddingLeft = 20;
-    private int paddingTop = 20;
-    private int paddingRight = 20;
-    private int paddingBottom = 20;
+    private int padding = 30;
+    private int paddingLeft = 30;
+    private int paddingTop = 30;
+    private int paddingRight = 30;
+    private int paddingBottom = 30;
     private String text = "";
     private int icon = 0;
     private Drawable drawable = null;
@@ -158,13 +158,14 @@ public class CuteButton extends LinearLayout {
         this.setClickable(isEnabled);
         this.setFocusable(true);
 
-
         setupTextView();
         setupImageView();
         setupBackground();
 
         super.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
+
         this.removeAllViews();
+
 
         if (iconPosition == POSITION_RIGHT || iconPosition == POSITION_BOTTOM) {
             if (textView != null) this.addView(textView);
@@ -174,7 +175,6 @@ public class CuteButton extends LinearLayout {
             if (textView != null) this.addView(textView);
 
         }
-
 
         updateGravity();
         updateIconPadding();
@@ -203,8 +203,9 @@ public class CuteButton extends LinearLayout {
 
         TypedArray defAttrsArray = context.obtainStyledAttributes(attrs, defAttr);
         padding = defAttrsArray.getDimensionPixelSize(1, padding);
-        paddingLeft = paddingTop = paddingRight = paddingBottom = padding;
-
+        if (padding != 0) {
+            paddingLeft = paddingTop = paddingRight = paddingBottom = padding;
+        }
         paddingLeft = defAttrsArray.getDimensionPixelSize(2, paddingLeft);
         paddingTop = defAttrsArray.getDimensionPixelSize(3, paddingTop);
         paddingRight = defAttrsArray.getDimensionPixelSize(4, paddingRight);

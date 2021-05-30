@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,25 +13,20 @@
         android:id="@+id/cuteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="40dp"
+        android:layout_gravity="center"
         app:cb_bgColor="#2D8051"
+        app:cb_bgColorDisabled="#ddd"
         app:cb_bgColorFocus="#043E67"
         app:cb_borderColor="#204000"
-        app:cb_borderRadius="90dp"
-        app:cb_borderWidth="10dp"
+        app:cb_borderRadius="30dp"
+        app:cb_borderWidth="1dp"
         app:cb_enabled="true"
         app:cb_gravity="center"
-        app:cb_icon="@drawable/ic_baseline_star_24"
-        app:cb_iconPadding="50dp"
-        app:cb_iconPosition="top"
-        app:cb_iconSize="100dp"
-        app:cb_text="Hello!"
-        app:cb_textColor="#000"
-        app:cb_textSize="100sp"
-        app:cb_textStyle="bold"
-        app:cb_bgColorDisabled="#ddd"
+        app:cb_text="Hello"
         app:cb_textAllCaps="false"
-        app:cb_textColorDisabled="#ccc"/>
+        app:cb_textColor="#000"
+        app:cb_textColorDisabled="#ccc"
+        app:cb_textSize="20sp" />
 
 
 </LinearLayout>
