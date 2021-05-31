@@ -65,6 +65,45 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 
 ```
 
+CuteButton
+```
+
+<com.rejowan.cutebutton.CuteButton
+    android:id="@+id/cuteButton"
+    android:layout_width="190dp"
+    android:layout_height="55dp"
+    android:layout_margin="5dp"
+    app:cb_bgColor="#0097A7"
+    app:cb_bgColorFocus="#006064"
+    app:cb_borderRadius="40dp"
+    app:cb_icon="@drawable/ic_arrow"
+    app:cb_iconPadding="5dp"
+    app:cb_iconSize="25dp"
+    app:cb_text="Download"
+    app:cb_textColor="#fff"
+    app:cb_textSize="20sp" />
+
+```
+
+Java
+
+```
+CuteButton cuteButton = findViewById(R.id.cuteButton);
+cuteButton.setText("Hi, This is Cute Button");
+cuteButton.setBackgroundColor(Color.BLUE);
+cuteButton.setDisableColor(Color.BLACK);
+cuteButton.setFocusColor(Color.CYAN);
+cuteButton.setTextStyle(CuteButton.TEXT_STYLE_BOLD);
+cuteButton.setBorderWidth(2);
+cuteButton.setBorderWidth(1);
+cuteButton.setRadius(10);
+cuteButton.setIcon(R.drawable.ic_baseline_save_24);
+cuteButton.setIconSize(25);
+cuteButton.setIconPadding(10);
+cuteButton.setIconPosition(CuteButton.POSITION_START);
+
+```
+
 ## Contribute
 
 Please fork this repository and contribute back using [pull requests](https://github.com/ahmmedrejowan/CuteButton/pulls).
