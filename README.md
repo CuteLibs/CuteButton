@@ -108,24 +108,24 @@ cuteButton.setIconPosition(CuteButton.POSITION_START);
 
 | Description  | XML Attribute | Java Attribute | 
 |-------------------------------|-------------|-------------|
-| Background Color (color) | `app:cb_bgColor="#0097A7"` |  |
-| Background Disabled Color (color) | `app:cb_bgColorDisabled="#bbb"` |  |
-| Background Focused Color (color) | `app:cb_bgColorFocus="#006064"` |  |
-| Border Color (color) | `app:cb_borderColor="#111"` |  |
-| Border Width (dimension) | `app:cb_borderWidth="2dp"` |  |
-| Radius (dimension) | `app:cb_borderRadius="40dp"` |  |
-| Status (boolean) | `app:cb_enabled="true"` |  |
-| Text (string) | `app:cb_text="Download"` |  |
-| Text Color (color) | `app:cb_textColor="#fff"` |  |
-| Text Disabled Color (color) | `app:cb_textColorDisabled="222"` |  |
-| Text size (dimension) | `app:cb_textSize="20sp"` |  |
-| Text Caps (boolean) | `app:cb_textAllCaps="false"` |  |
-| Text Style (int) supported: NORMAL, BOLD, ITALIC | `app:cb_textStyle="normal"` |  |
-| Icon (drawable) | `app:cb_icon="@drawable/ic_arrow` |  |
-| Icon Size (dimension) | `app:cb_iconSize="24dp"` |  |
-| Icon Position (int) supported: TOP, BOTTOM, START, END | `app:cb_iconPosition="start"` |  |
-| Icon Padding (int) | `app:cb_iconPadding="5dp"` |  |
-| Gravity (int) supported: CENTER, START, TOP, END, BOTTOM | `app:cb_gravity="center"` |  |
+| Background Color (color) | `app:cb_bgColor="#0097A7"` | `setBackgroundColor(Color.BLUE);` |
+| Background Disabled Color (color) | `app:cb_bgColorDisabled="#bbb"` | `setDisableColor(Color.BLACK);` |
+| Background Focused Color (color) | `app:cb_bgColorFocus="#006064"` | `setFocusColor(Color.CYAN);` |
+| Border Color (color) | `app:cb_borderColor="#111"` | `cuteButton.setBorderColor(Color.BLACK);` |
+| Border Width (dimension) | `app:cb_borderWidth="2dp"` | `cuteButton.setBorderWidth(2);` |
+| Radius (dimension) | `app:cb_borderRadius="40dp"` | `cuteButton.setRadius(10);` |
+| Status (boolean) | `app:cb_enabled="true"` | `cuteButton.setEnabled(true);` |
+| Text (string) | `app:cb_text="Download"` | `cuteButton.setText("Hi, This is Cute Button");` |
+| Text Color (color) | `app:cb_textColor="#fff"` | `cuteButton.setTextColor(Color.WHITE);` |
+| Text Disabled Color (color) | `app:cb_textColorDisabled="222"` | `cuteButton.setDisabledTextColor(Color.MAGENTA);` |
+| Text size (dimension) | `app:cb_textSize="20sp"` | `cuteButton.setTextSize(25);` |
+| Text Caps (boolean) | `app:cb_textAllCaps="false"` | `cuteButton.setAllCaps(false);` |
+| Text Style (int) supported: NORMAL, BOLD, ITALIC | `app:cb_textStyle="normal"` | `cuteButton.setTextStyle(CuteButton.TEXT_STYLE_BOLD);` |
+| Icon (drawable) | `app:cb_icon="@drawable/ic_arrow` | `cuteButton.setIcon(R.drawable.ic_save);` |
+| Icon Size (dimension) | `app:cb_iconSize="24dp"` | `cuteButton.setIconSize(25);` |
+| Icon Position (int) supported: TOP, BOTTOM, START, END | `app:cb_iconPosition="start"` | `cuteButton.setIconPosition(CuteButton.POSITION_START);` |
+| Icon Padding (int) | `app:cb_iconPadding="5dp"` | `cuteButton.setIconPadding(10);` |
+| Gravity (int) supported: CENTER, START, TOP, END, BOTTOM | `app:cb_gravity="center"` | `cuteButton.setTextGravity(CuteButton.GRAVITY_CENTER);` |
 
 
 
