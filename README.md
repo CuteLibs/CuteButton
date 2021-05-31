@@ -50,7 +50,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.ahmmedrejowan:CuteButton:1.0'
+	implementation 'com.github.ahmmedrejowan:CuteButton:1.1'
 }
 ```
 
@@ -85,7 +85,7 @@ CuteButton
 
 ```
 
-Java
+#### Java
 
 ```
 CuteButton cuteButton = findViewById(R.id.cuteButton);
@@ -103,6 +103,9 @@ cuteButton.setIconPadding(10);
 cuteButton.setIconPosition(CuteButton.POSITION_START);
 
 ```
+
+#### Attributes
+
 
 ## Contribute
 
