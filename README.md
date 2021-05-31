@@ -4,7 +4,7 @@
  
 [![GitHub issues](https://img.shields.io/github/issues/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/issues) [![GitHub forks](https://img.shields.io/github/forks/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/network) [![GitHub stars](https://img.shields.io/github/stars/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/stargazers) [![GitHub contributors](https://img.shields.io/github/contributors/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/graphs/contributors)
 
-![CuteButton](https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/CuteButton.png)
+![CuteButton](https://user-images.githubusercontent.com/42619122/120242316-691f5780-c286-11eb-9e6c-dff97f03e358.png)
 
 **A Material Design Custom Button Library for Android**
 
@@ -27,7 +27,7 @@ CuteButton comes with tons of new features and options:
 ## Screenshot
 Here are some buttons created with `CuteButton`
 
-<img src="https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/1622416945510.jpg" width="500px" alt="CuteButton"/>
+<img src="https://user-images.githubusercontent.com/42619122/120242331-73415600-c286-11eb-9e18-e690f5f1231e.jpg" width="500px" alt="CuteButton"/>
 
 ## Prerequisites
 
