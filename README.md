@@ -56,6 +56,14 @@ dependencies {
 
 ## Usage
 
+#### XML
+Include namespace to the root Layout/View:
+
+```
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+```
 
 ## Contribute
 
