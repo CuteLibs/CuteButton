@@ -16,6 +16,15 @@ It has everything as the Default Button library, but with a lots customizations.
 This is the Initial Relase. Changes will be added later. Check on `Releases Tab` for Info.
 
 ## Features 
+CuteButton comes with tons of new features and options:
+- Background Color - Normal, Focused, Disabled
+- Border - Color, Width, Radius
+- Icon - Drawable Icon, Icon Size, Icon Padding, Icon Position
+- Text - Normal Color, Disabled Color
+- Ripple Effect on Clicks
+ and also all the features of normal `Button` like padding, margin etc.
+
+## Screenshot
 
 
 ## Prerequisites
