@@ -4,35 +4,105 @@
  
 [![GitHub issues](https://img.shields.io/github/issues/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/issues) [![GitHub forks](https://img.shields.io/github/forks/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/network) [![GitHub stars](https://img.shields.io/github/stars/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/stargazers) [![GitHub contributors](https://img.shields.io/github/contributors/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/graphs/contributors)
 
-<br/>
-
 ![CuteButton](https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/CuteButton.png)
 
-**A material design Toast Library for Android**
-A Material Design Custom Button Library for Android
-
-<br/>
-
-## What's New
-Check on Releases Tab for changes.
-<br/>
+**A Material Design Custom Button Library for Android**
 
 ## Purpose
-CuteButton is a Custom Material Design Android Library which could be an alternative for Deault Button Library. 
-It has everything as the Default Button library, but with a lot customizations.
-<br/>
+**CuteButton** is a `Custom Material Design Android Library` which could be an alternative for Deault `Button` Library. 
+It has everything as the Default Button library, but with a lots customizations.
+
+## What's New
+This is the Initial Relase. Changes will be added later. Check on `Releases Tab` for Info.
 
 ## Features 
+CuteButton comes with tons of new features and options:
+- Background Color - Normal, Focused, Disabled
+- Border - Color, Width, Radius
+- Icon - Drawable Icon, Icon Size, Icon Padding, Icon Position
+- Text - Normal Color, Disabled Color
+- Ripple Effect on Clicks
+ and also all the features of normal `Button` like padding, margin etc.
 
-<br/>
+## Screenshot
+Here are some buttons created with `CuteButton`
+
+<img src="https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/1622416945510.jpg" width="500px" alt="CuteButton"/>
 
 ## Prerequisites
 
+Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
+
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```
 <br/>
+
+## Dependencies
+
+Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+
+```gradle
+dependencies {
+	...
+	implementation 'com.github.ahmmedrejowan:CuteButton:1.0'
+}
+```
 
 ## Usage
 
-<br/>
+#### XML
+Include namespace to the root Layout/View:
+
+```
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+```
+
+CuteButton
+```
+
+<com.rejowan.cutebutton.CuteButton
+    android:id="@+id/cuteButton"
+    android:layout_width="190dp"
+    android:layout_height="55dp"
+    android:layout_margin="5dp"
+    app:cb_bgColor="#0097A7"
+    app:cb_bgColorFocus="#006064"
+    app:cb_borderRadius="40dp"
+    app:cb_icon="@drawable/ic_arrow"
+    app:cb_iconPadding="5dp"
+    app:cb_iconSize="25dp"
+    app:cb_text="Download"
+    app:cb_textColor="#fff"
+    app:cb_textSize="20sp" />
+
+```
+
+Java
+
+```
+CuteButton cuteButton = findViewById(R.id.cuteButton);
+cuteButton.setText("Hi, This is Cute Button");
+cuteButton.setBackgroundColor(Color.BLUE);
+cuteButton.setDisableColor(Color.BLACK);
+cuteButton.setFocusColor(Color.CYAN);
+cuteButton.setTextStyle(CuteButton.TEXT_STYLE_BOLD);
+cuteButton.setBorderWidth(2);
+cuteButton.setBorderWidth(1);
+cuteButton.setRadius(10);
+cuteButton.setIcon(R.drawable.ic_baseline_save_24);
+cuteButton.setIconSize(25);
+cuteButton.setIconPadding(10);
+cuteButton.setIconPosition(CuteButton.POSITION_START);
+
+```
 
 ## Contribute
 
