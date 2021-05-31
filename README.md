@@ -106,6 +106,29 @@ cuteButton.setIconPosition(CuteButton.POSITION_START);
 
 #### Attributes
 
+| Description  | XML Attribute | Java Attribute | 
+|-------------------------------|-------------|-------------|
+| Background Color (color) | `app:cb_bgColor="#0097A7"` |  |
+| Background Disabled Color (color) | `app:cb_bgColorDisabled="#bbb"` |  |
+| Background Focused Color (color) | `app:cb_bgColorFocus="#006064"` |  |
+| Border Color (color) | `app:cb_borderColor="#111"` |  |
+| Border Width (dimension) | `app:cb_borderWidth="2dp"` |  |
+| Radius (dimension) | `app:cb_borderRadius="40dp"` |  |
+| Status (boolean) | `app:cb_enabled="true"` |  |
+| Text (string) | `app:cb_text="Download"` |  |
+| Text Color (color) | `app:cb_textColor="#fff"` |  |
+| Text Disabled Color (color) | `app:cb_textColorDisabled="222"` |  |
+| Text size (dimension) | `app:cb_textSize="20sp"` |  |
+| Text Caps (boolean) | `app:cb_textAllCaps="false"` |  |
+| Text Style (int) supported: NORMAL, BOLD, ITALIC | `app:cb_textStyle="normal"` |  |
+| Icon (drawable) | `app:cb_icon="@drawable/ic_arrow` |  |
+| Icon Size (dimension) | `app:cb_iconSize="24dp"` |  |
+| Icon Position (int) supported: TOP, BOTTOM, START, END | `app:cb_iconPosition="start"` |  |
+| Icon Padding (int) | `app:cb_iconPadding="5dp"` |  |
+| Gravity (int) supported: CENTER, START, TOP, END, BOTTOM | `app:cb_gravity="center"` |  |
+
+
+
 
 ## Contribute
 
