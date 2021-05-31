@@ -4,7 +4,7 @@
  
 [![GitHub issues](https://img.shields.io/github/issues/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/issues) [![GitHub forks](https://img.shields.io/github/forks/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/network) [![GitHub stars](https://img.shields.io/github/stars/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/stargazers) [![GitHub contributors](https://img.shields.io/github/contributors/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/graphs/contributors)
 
-<img src="https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/CuteButton.png" width="350px" />
+<img src="https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/CuteButton.png"/>
 
 **A material design Toast Library for Android**
 A Material Design Custom Button Library for Android
