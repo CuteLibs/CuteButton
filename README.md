@@ -4,21 +4,18 @@
  
 [![GitHub issues](https://img.shields.io/github/issues/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/issues) [![GitHub forks](https://img.shields.io/github/forks/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/network) [![GitHub stars](https://img.shields.io/github/stars/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/stargazers) [![GitHub contributors](https://img.shields.io/github/contributors/ahmmedrejowan/CuteButton)](https://github.com/ahmmedrejowan/CuteButton/graphs/contributors)
 
-<img src="https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/CuteButton.png"/>
+![CuteButton](https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/CuteButton.png)
 
-**A material design Toast Library for Android**
-A Material Design Custom Button Library for Android
-
-<br/>
-
-## What's New
-Check on Releases Tab for changes.
-<br/>
+**A Material Design Custom Button Library for Android**
 
 ## Purpose
-CuteButton is a Custom Material Design Android Library which could be an alternative for Deault Button Library. 
-It has everything as the Default Button library, but with a lot customizations.
+**CuteButton** is a `Custom Material Design Android Library` which could be an alternative for Deault `Button` Library. 
+It has everything as the Default Button library, but with a lots customizations.
+
+## What's New
+This is the Initial Relase. Changes will be added later. Check on `Releases Tab` for Info.
 <br/>
+
 
 ## Features 
 
