@@ -128,6 +128,11 @@ cuteButton.setIconPosition(CuteButton.POSITION_START);
 | Gravity (int) supported: CENTER, START, TOP, END, BOTTOM | `app:cb_gravity="center"` | `cuteButton.setTextGravity(CuteButton.GRAVITY_CENTER);` |
 
 
+## Notes
+- Be sure to add the Maven and Dependency properly.
+- Check the Dependency Version before using
+
+There could be some issues with Java attributes in some cases. I'll fix them as soon as I can. 
 
 
 ## Contribute
@@ -154,8 +159,6 @@ Reach me @
 * [Twitter](https://twitter.com/ahmmedrejowan)
 * [Facebook](https://facebook.com/ahmmedrejowan)
 * [StackOverFlow](https://stackoverflow.com/users/9932194/k-m-rejowan-ahmmed)
-
-
 
 
 
