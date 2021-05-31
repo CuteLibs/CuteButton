@@ -35,7 +35,7 @@ public class CuteButton extends LinearLayout {
 
 
     /*
-     Copyright 2021 K M Rejowan Ahmmed (ahmmedrejowan)
+     CopyEND 2021 K M Rejowan Ahmmed (ahmmedrejowan)
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -51,15 +51,15 @@ public class CuteButton extends LinearLayout {
      */
 
 
-    public static final int POSITION_LEFT = 1;
-    public static final int POSITION_RIGHT = 2;
+    public static final int POSITION_START = 1;
+    public static final int POSITION_END = 2;
     public static final int POSITION_TOP = 3;
     public static final int POSITION_BOTTOM = 4;
 
 
     public static final int GRAVITY_CENTER = 0;
-    public static final int GRAVITY_LEFT = 1;
-    public static final int GRAVITY_RIGHT = 2;
+    public static final int GRAVITY_START = 1;
+    public static final int GRAVITY_END = 2;
     public static final int GRAVITY_TOP = 3;
     public static final int GRAVITY_BOTTOM = 4;
 
@@ -83,21 +83,19 @@ public class CuteButton extends LinearLayout {
     private boolean textAllCaps = false;
     private int textStyle = 0;
     private int padding = 30;
-    private int paddingLeft = 30;
+    private int paddingSTART = 30;
     private int paddingTop = 30;
-    private int paddingRight = 30;
+    private int paddingEND = 30;
     private int paddingBottom = 30;
     private String text = "";
     private int icon = 0;
     private Drawable drawable = null;
-    private int iconPosition = POSITION_LEFT;
+    private int iconPosition = POSITION_START;
     private int iconSize = 37;
     private int iconPadding = 10;
     private int lGravity = 0;
-
     private ImageView imageView;
     private TextView textView;
-
     public CuteButton(Context context) {
         super(context);
         this.context = context;
@@ -137,7 +135,6 @@ public class CuteButton extends LinearLayout {
         return Math.round(px / context.getResources().getDisplayMetrics().scaledDensity);
     }
 
-
     private void initializeView() {
 
         if (iconPosition == POSITION_TOP || iconPosition == POSITION_BOTTOM) {
@@ -162,12 +159,12 @@ public class CuteButton extends LinearLayout {
         setupImageView();
         setupBackground();
 
-        super.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
+        super.setPadding(paddingSTART, paddingTop, paddingEND, paddingBottom);
 
         this.removeAllViews();
 
 
-        if (iconPosition == POSITION_RIGHT || iconPosition == POSITION_BOTTOM) {
+        if (iconPosition == POSITION_END || iconPosition == POSITION_BOTTOM) {
             if (textView != null) this.addView(textView);
             if (imageView != null) this.addView(imageView);
         } else {
@@ -188,14 +185,13 @@ public class CuteButton extends LinearLayout {
         attrsArray.recycle();
     }
 
-
     private void initDefaultAttributes(AttributeSet attrs) {
         int[] defAttr = new int[]{
                 android.R.attr.gravity,
                 android.R.attr.padding,
-                android.R.attr.paddingLeft,
+                android.R.attr.paddingStart,
                 android.R.attr.paddingTop,
-                android.R.attr.paddingRight,
+                android.R.attr.paddingEnd,
                 android.R.attr.paddingBottom,
                 android.R.attr.paddingStart,
                 android.R.attr.paddingEnd
@@ -204,14 +200,14 @@ public class CuteButton extends LinearLayout {
         TypedArray defAttrsArray = context.obtainStyledAttributes(attrs, defAttr);
         padding = defAttrsArray.getDimensionPixelSize(1, padding);
         if (padding != 0) {
-            paddingLeft = paddingTop = paddingRight = paddingBottom = padding;
+            paddingSTART = paddingTop = paddingEND = paddingBottom = padding;
         }
-        paddingLeft = defAttrsArray.getDimensionPixelSize(2, paddingLeft);
+        paddingSTART = defAttrsArray.getDimensionPixelSize(2, paddingSTART);
         paddingTop = defAttrsArray.getDimensionPixelSize(3, paddingTop);
-        paddingRight = defAttrsArray.getDimensionPixelSize(4, paddingRight);
+        paddingEND = defAttrsArray.getDimensionPixelSize(4, paddingEND);
         paddingBottom = defAttrsArray.getDimensionPixelSize(5, paddingBottom);
-        paddingLeft = defAttrsArray.getDimensionPixelSize(6, paddingLeft);
-        paddingRight = defAttrsArray.getDimensionPixelSize(7, paddingRight);
+        paddingSTART = defAttrsArray.getDimensionPixelSize(6, paddingSTART);
+        paddingEND = defAttrsArray.getDimensionPixelSize(7, paddingEND);
 
         defAttrsArray.recycle();
 
@@ -322,7 +318,6 @@ public class CuteButton extends LinearLayout {
         textView.setGravity(gravity);
     }
 
-
     private void setupImageView() {
         imageView = new ImageView(context);
         if (icon == 0) {
@@ -348,9 +343,9 @@ public class CuteButton extends LinearLayout {
     private void updateGravity() {
         if (lGravity == GRAVITY_CENTER) {
             super.setGravity(Gravity.CENTER);
-        } else if (lGravity == GRAVITY_LEFT) {
+        } else if (lGravity == GRAVITY_START) {
             super.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
-        } else if (lGravity == GRAVITY_RIGHT) {
+        } else if (lGravity == GRAVITY_END) {
             super.setGravity(Gravity.END | Gravity.CENTER_VERTICAL);
         } else if (lGravity == GRAVITY_TOP) {
             super.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
@@ -365,11 +360,11 @@ public class CuteButton extends LinearLayout {
         }
         LayoutParams imageViewParams = new LayoutParams(iconSize, iconSize);
 
-        if (iconPosition == POSITION_LEFT) {
+        if (iconPosition == POSITION_START) {
             imageViewParams.setMargins(0, 0, getDrawablePadding(), 0);
         } else if (iconPosition == POSITION_TOP) {
             imageViewParams.setMargins(0, 0, 0, getDrawablePadding());
-        } else if (iconPosition == POSITION_RIGHT) {
+        } else if (iconPosition == POSITION_END) {
             imageViewParams.setMargins(getDrawablePadding(), 0, 0, 0);
         } else if (iconPosition == POSITION_BOTTOM) {
             imageViewParams.setMargins(0, getDrawablePadding(), 0, 0);
@@ -476,7 +471,6 @@ public class CuteButton extends LinearLayout {
         return radius;
     }
 
-
     @SuppressWarnings("unused")
     public void setRadius(float size) {
         this.radius = size;
@@ -543,12 +537,15 @@ public class CuteButton extends LinearLayout {
         setupBackground();
     }
 
-
     @SuppressWarnings("unused")
     public int getIconSize() {
 
         return iconSize;
 
+    }
+
+    public void setIconSize(int iconSize) {
+        this.iconSize = iconSize;
     }
 
     @SuppressWarnings("unused")
