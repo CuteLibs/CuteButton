@@ -325,7 +325,7 @@ public class CuteButton extends LinearLayout {
 
     private void setupImageView() {
         imageView = new ImageView(context);
-        if (icon == 0 ) {
+        if (icon == 0) {
             iconSize = 0;
         }
 
