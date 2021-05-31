@@ -14,20 +14,18 @@ It has everything as the Default Button library, but with a lots customizations.
 
 ## What's New
 This is the Initial Relase. Changes will be added later. Check on `Releases Tab` for Info.
-<br/>
-
 
 ## Features 
 
-<br/>
 
 ## Prerequisites
 
-<br/>
+
+## Dependencies
+
 
 ## Usage
 
-<br/>
 
 ## Contribute
 
