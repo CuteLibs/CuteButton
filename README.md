@@ -25,13 +25,34 @@ CuteButton comes with tons of new features and options:
  and also all the features of normal `Button` like padding, margin etc.
 
 ## Screenshot
+Here are some buttons created with `CuteButton`
 
+<img src="https://github.com/ahmmedrejowan/CuteButton/blob/master/demo/1622416945510.jpg" width="500px" alt="CuteButton"/>
 
 ## Prerequisites
 
+Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
+
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```
+<br/>
 
 ## Dependencies
 
+Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+
+```gradle
+dependencies {
+	...
+	implementation 'com.github.ahmmedrejowan:CuteButton:1.0'
+}
+```
 
 ## Usage
 
