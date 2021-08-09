@@ -9,11 +9,11 @@
 **A Material Design Custom Button Library for Android**
 
 ## Purpose
-**CuteButton** is a `Custom Material Design Android Library` which could be an alternative for Deault `Button` Library. 
-It has everything as the Default Button library, but with a lots customizations.
+**CuteButton** is a `Custom Material Design Android Library` which could be an alternative for Deafult `Button` Library. 
+It has everything as the Default Button library, but with a lot customizations.
 
 ## What's New
-This is the Initial Relase. Changes will be added later. Check on `Releases Tab` for Info.
+This is the Initial Release. Changes will be added later. Check on `Releases Tab` for Info.
 
 ## Features 
 CuteButton comes with tons of new features and options:
